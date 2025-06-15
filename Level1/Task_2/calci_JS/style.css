@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+    font-family:monospace;
+    color:white;
+    background-color: #9F5255;
+
+}
+.main{
+    width:500px;
+    height:600px;
+    background-color: #FFE8CD;
+    border-radius: 30px;
+
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:20px;
+
+}
+.ans{
+    width:80%;
+    background-color: #E1ACAC;
+    height:20%;
+    border-radius: 30px;
+    color:black;
+
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 3rem;
+    overflow: hidden;
+     padding: 10px 20px;    
+     text-align: right;
+     font-family: monospace;
+
+
+    
+}
+
+.calculations{
+    height:70%;
+    width:80%;
+    /* background-color: #A87676; */
+    border-radius: 30px;
+
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    padding:10px;
+    gap:10px;
+   
+}
+.calculations button{
+    border-radius: 30px;
+    border:none;
+}
+
+.item1{
+    grid-column: span 2;
+}
+.btn{
+    background-color: #E7CCCC;
+    font-size: 2rem;
+}
+
