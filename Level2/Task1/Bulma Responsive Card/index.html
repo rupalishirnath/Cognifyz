@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Card - Bulma</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <style>
+    .card.shadow {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .card.shadow:hover {
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+    .component{
+        color:#243642;
+    }
+    .card{
+        background-color: #E2F1E7;
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title has-text-centered">Responsive Card using Bulma</h1>
+
+      <div class="card shadow" style="max-width: 400px; margin: auto;">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="./photo-1682236090868-897de2a8d96f.avif" alt="Toy Car Image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            <p><strong>Toy Car</strong></p>
+            <p class="component">This toy car is a miniature replica with a sleek and colorful design.
+              Built with durable plastic and smooth-rolling wheels, it's perfect for kids' play.
+              Its compact size makes it easy to carry and fun to race with friends.
+              The detailed body and vibrant paint give it a realistic look.
+              Great for imaginative play, collections, or as a fun desk accessory.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+
+</html>

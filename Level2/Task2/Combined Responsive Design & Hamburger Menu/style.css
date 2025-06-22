@@ -1,0 +1,140 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #333;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .navbar .brand {
+      font-size: 1.5rem;
+    }
+
+    .nav-toggle {
+      display: none;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .hamburger span {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      display: block;
+    }
+
+    /* Sections */
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .hero {
+      background: #f9f9f9;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .feature-box {
+      flex: 1 1 30%;
+      background: #f0f0f0;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .about {
+      background: #ffe7d2;
+    }
+
+    .card {
+      max-width: 600px;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Responsive */
+    @media (max-width: 786px) {
+      .hamburger {
+        display: flex;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        margin-top: 10px;
+      }
+
+      .nav-toggle:checked + .hamburger + .nav-links {
+        display: flex;
+      }
+
+      .nav-links li {
+        padding: 10px;
+        border-top: 1px solid #444;
+      }
+
+      .features {
+        flex-direction: column;
+      }
+    }
+
+
+
+    .feature-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
